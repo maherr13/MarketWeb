@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>insert page</title>
+    </header>
+    <body>
+        <h3>Insert Item</h3>
+        <h4> 
+            <form action="{{url_for('insert')}}" method="post" >
+                <input type="text" placeholder="Enter product name" name ="name">
+                <input type="number" placeholder="Enter product price" name ="price">
+                <button>Submit</button>
+            </form> 
+        </h4>
+        <h4> 
+            <a href="{{ url_for('home') }}">Return Home page</a> 
+        </h4>
+    </body>
+</html>

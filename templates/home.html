@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+    </head>
+    <body>
+        <h1>Market</h1>
+        <h3>Insert Item</h3>
+        <h4> 
+            <form action="{{url_for('insert')}}" method="post" >
+                <input type="text" placeholder="Enter product name" name ="name">
+                <input type="number" placeholder="Enter product price" name ="price">
+                <button>Submit</button>
+            </form> 
+        </h4>
+        <h3>Search By name</h3>
+        <h4> 
+            <form action="{{url_for('search_name')}}" method="post" >
+                <input type="text" placeholder="Enter product name" name ="search_name">
+                <button>Submit your search</button>
+            </form>
+             
+        </h4>
+        <h3>Search By price</h3>
+        <h4> 
+            <form action="{{url_for('search_price')}}" method="post" >
+                <input type="number" placeholder="Enter product price" name ="search_price">
+                <button>Submit your search</button>
+            </form>
+            
+        </h4>
+        <h3 >View ALL items</h3>
+        <h4> 
+            <a  href="{{ url_for('view') }}">view</a> 
+        </h4>
+    </body>
+</html>

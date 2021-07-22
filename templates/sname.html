@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>search page price</title>
+    </head>
+    <body>
+        <h2>PRODUCTS</h2>
+        <ul>
+        {% for item in items %}
+            <li>{{ item }}</li>
+        {% endfor %}
+        </ul>
+        <h3>home</h3>
+        <h4> 
+            <a href="{{ url_for('home') }}">Return Home page</a> 
+        </h4>
+    </body>
+</html>
